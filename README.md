@@ -53,6 +53,7 @@ flowchart LR
 | [`learning-records/`](./learning-records/README.md) | 本人独立完成的每周学习记录 | 每位成员只改自己的目录 |
 | [`exercises/`](./exercises/README.md) | 个人实验和练习代码 | 每位成员只改自己的目录 |
 | [`examples/`](./examples/README.md) | 已整理、可重复运行的公共示例 | 先沟通，再共同维护 |
+| [`scripts/check_naming.py`](./scripts/check_naming.py) | 成员目录命名规范自动检查 | 维护者 |
 
 成员文件统一使用 GitHub 用户名，不使用真实姓名。例如：
 
@@ -95,7 +96,10 @@ YCZX Code 的学习任务和教程位于 [`projects/yczx_code/`](./projects/yczx
 uv sync
 uv run python --version
 uv run ruff check .
+uv run python scripts/check_naming.py
 ```
+
+Pull Request 会通过 GitHub Actions 自动运行同一命名检查。检查失败时，打开 PR 的 `Checks` 页面查看错误路径和正确格式。
 
 确实需要第三方依赖时使用 `uv add`。不要提交 `.venv`、`.env`、数据库、日志、本地私有配置或任何密钥。
 

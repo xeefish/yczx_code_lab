@@ -24,6 +24,17 @@ git log --oneline main..HEAD
 
 确认当前不是 `main`，PR 中只有本任务相关文件，且所有 commit 都能解释。
 
+## 自动检查
+
+PR 创建或更新后，GitHub Actions 会运行“命名规范检查”。它只检查以下成员目录：
+
+```text
+learning-records/<project-id>/<github-id>/week-XX.md
+exercises/<project-id>/<github-id>/week-XX/<文件>
+```
+
+检查为红色时，在 PR 页面打开 `Checks`，进入“检查成员目录命名”，根据中文错误修改路径。修改后在原分支再次 commit 和 push，PR 会自动重新检查。不要为了绕过失败而新建另一个 PR。
+
 ## GitHub 页面设置
 
 - `base`：应合并到的目标分支，通常是 `main`。

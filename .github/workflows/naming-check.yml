@@ -1,0 +1,31 @@
+name: 命名规范检查
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  naming-check:
+    name: 检查成员目录命名
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: 获取仓库代码
+        uses: actions/checkout@v6
+
+      - name: 配置 Python 3.12
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: 运行命名规范检查
+        run: python scripts/check_naming.py

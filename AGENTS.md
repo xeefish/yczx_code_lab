@@ -36,6 +36,7 @@
 
 ```powershell
 uv run ruff check .
+uv run python scripts/check_naming.py
 ```
 
 练习若没有自动测试，至少在 PR 中写明实际运行命令和输出。无法验证时要明确说明原因。
