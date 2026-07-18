@@ -1,0 +1,19 @@
+[project]
+name = "yczx-code-lab"
+version = "0.1.0"
+description = "YCZX Code 共同学习与实验仓库"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "anthropic>=0.117.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88

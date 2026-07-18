@@ -1,0 +1,30 @@
+# Python 运行产物
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# 虚拟环境与构建产物
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# 本地配置与敏感数据
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+logs/
+uploads/
+
+# 编辑器和操作系统文件
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store
