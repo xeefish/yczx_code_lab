@@ -28,6 +28,7 @@ exercises/<project-id>/<github-id>/week-XX/
 ```powershell
 uv sync
 uv run ruff check .
+uv run python scripts/check_naming.py
 ```
 
 没有自动测试时，在 PR 中写明实际运行命令、输出和未验证部分。

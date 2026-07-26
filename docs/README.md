@@ -12,7 +12,7 @@
 | [`git/troubleshooting.md`](./git/troubleshooting.md) | 认证、权限、连接、分支和冲突排查 |
 | [`workflow/pull-request.md`](./workflow/pull-request.md) | PR 创建、评审、修改和合并规则 |
 | [`materials/`](./materials/README.md) | 外部教材与参考资料索引 |
-| [`templates/`](./templates/) | 学习记录与练习报告模板 |
+| [`templates/`](./templates/) | 项目、任务、学习记录与练习报告模板 |
 | [`meetings/`](./meetings/README.md) | 全体成员可阅读的会议资料 |
 | [`maintainers/`](./maintainers/initial-publish.md) | 仓库维护者检查清单 |
 | [`CONTRIBUTING.md`](./CONTRIBUTING.md) | 详细贡献流程 |

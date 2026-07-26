@@ -110,4 +110,4 @@ git clone https://github.com/yanchuaner/yczx_code_lab.git
 
 ## 下一步
 
-环境检查通过后，按 [`YCZX Code 真实案例教程`](../../projects/yczx_code/tutorials/README.md) 从第一次模型调用开始，再逐步进入 Tool Use 和 Agent Loop。
+环境检查通过后，按 [`YCZX Code 可运行案例`](../../examples/yczx_code/README.md) 从第一次模型调用开始，再逐步进入 Tool Use 和 Agent Loop。
