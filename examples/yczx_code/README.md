@@ -12,3 +12,36 @@
 | [`SOURCES.md`](./SOURCES.md) | 概念来源与许可证边界 | 不适用 |
 
 真实模型案例只从环境变量读取 API Key，且所有请求都可能产生费用。运行前确认模型、任务和最大步数，不要把 Key 写入本目录的任何文件。
+
+## 运行准备
+
+在仓库根目录同步依赖：
+
+```powershell
+uv sync
+```
+
+在当前 PowerShell 中设置 DeepSeek Anthropic 兼容接口：
+
+```powershell
+$env:ANTHROPIC_BASE_URL = "https://api.deepseek.com/anthropic"
+$env:DEEPSEEK_MODEL = "deepseek-v4-pro"
+$secureKey = Read-Host "请输入 DeepSeek API Key" -AsSecureString
+$env:ANTHROPIC_API_KEY = [System.Net.NetworkCredential]::new("", $secureKey).Password
+```
+
+按表格顺序运行案例，例如：
+
+```powershell
+uv run python examples/yczx_code/01_first_chat.py
+uv run python examples/yczx_code/03_agent_loop.py
+```
+
+完成后清除 Key：
+
+```powershell
+Remove-Item Env:ANTHROPIC_API_KEY
+Remove-Variable secureKey -ErrorAction SilentlyContinue
+```
+
+没有 API Key 时可以阅读代码、测试工具函数并提交可复现的阻塞，不要使用他人的密钥。

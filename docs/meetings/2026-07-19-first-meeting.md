@@ -71,7 +71,7 @@
 
 ## 公共演示
 
-演示使用个人 API Key 完成真实模型调用和工具循环。先按 [`真实案例教程`](../../projects/yczx_code/tutorials/README.md) 设置当前终端环境变量，再运行：
+演示使用个人 API Key 完成真实模型调用和工具循环。先按 [`可运行案例说明`](../../examples/yczx_code/README.md) 设置当前终端环境变量，再运行：
 
 ```powershell
 git clone https://github.com/yanchuaner/yczx_code_lab.git
@@ -115,7 +115,7 @@ exercises/yczx_code/<github-id>/week-XX/
 
 - 学习 LLM 交互、模型幻觉、ReAct 和 Tool Use。
 - 复习 `s01_agent_loop`，阅读 `s02_tool_use`。
-- 完成 [`五个真实案例教程`](../../projects/yczx_code/tutorials/README.md) 中的 01–03。
+- 完成 [`五个可运行案例`](../../examples/yczx_code/README.md) 中的 01–03。
 - 观察并解释 `tool_use`、本地执行和 `tool_result`。
 - 核心开发候选继续完成只读代码库 ReAct 案例。
 - 周六提交原创学习记录、练习代码和验证结果。

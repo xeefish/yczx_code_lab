@@ -5,16 +5,22 @@
 ## hello-agents
 
 - 仓库：<https://github.com/datawhalechina/hello-agents>
+- 本次计划核对版本：`6c616938c521c89bc4b2bf001bf237d259f1726b`（2026-07-26）。
 - 定位：建立 Agent、LLM、经典范式、上下文和评测的知识地图。
 - 第一周：前言、第一章《初识智能体》。
 - 第二周：第三章 3.2、3.3.2，以及第四章 4.2 ReAct。
+- 第三周至第七周：以 [`projects/yczx_code/tasks/learning/`](../../projects/yczx_code/tasks/learning/) 中当周任务为准。
 
 ## learn-claude-code
 
 - 仓库：<https://github.com/shareAI-lab/learn-claude-code>
+- 本次计划核对版本：`a9cafe953aa714f9cb1171f217d96bd2734bbcc7`（2026-07-26）。
 - 定位：学习 Agent Harness 的循环、工具、权限、上下文和错误恢复。
 - 第一周：中文 README、`s01_agent_loop`。
 - 第二周：复习 `s01_agent_loop`，阅读 `s02_tool_use`。
+- 第三周至第七周：按当前 `s01` 至 `s20` 主线分层学习，具体范围以 YCZX Code 当周任务为准。
+
+外部教材会更新。执行任务和撰写学习记录时，注明实际阅读的提交号或日期，不依赖章节编号长期保持不变。
 
 ## YCZX Code
 

@@ -6,7 +6,7 @@
 
 - `hello-agents`：前言、第一章《初识智能体》。
 - `learn-claude-code`：中文 README、`s01_agent_loop`。
-- YCZX Code：`README.md`、`docs/FIRST_PRINCIPLES.md`。
+- YCZX Code：根目录 `README.md`、`AGENTS.md`、`projects/README.md` 和 `projects/yczx_code/README.md`。
 
 ## 目标
 
